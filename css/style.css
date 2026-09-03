@@ -1510,6 +1510,22 @@ textarea.form-control {
    Minimalist Atelier Scroll-To-Top Widget (Architectural Line & Text)
    Zero white background, zero drop-shadow, sand-muted organic presence
    ========================================================================== */
+/* Повністю вимикає синє виділення та підсвічування для цього елемента */
+.atelier-scroll-top,
+.atelier-scroll-top *,
+.btn-top-scroll,
+.btn-top-scroll *,
+#scroll-to-top-btn,
+#scroll-to-top-btn * {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* Standard */
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
 .atelier-scroll-top,
 .btn-top-scroll {
   position: fixed;
@@ -1528,7 +1544,6 @@ textarea.form-control {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
-  user-select: none;
   color: var(--color-sand-muted, #ded7c8) !important;
 }
 
