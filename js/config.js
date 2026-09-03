@@ -8,8 +8,8 @@ const SITE_CONFIG = {
 
     // Пряма відправка заявок у Telegram-чат (Telegram Bot API)
     telegram: {
-        botToken: "8903060860:AAFKSB4OSIJMmKnf8FlRlCOZUdu8_4xc_Cs", // Твій токен
-        chatId: "-5342810428"                                        // ID групи 'test'
+        botToken: "8903060860:AAFKSB4OSIJMmKnf8FlRlCOZUdu8_4xc_Cs",
+        chatId: "-1004473436337"
     },
 
     address: {
