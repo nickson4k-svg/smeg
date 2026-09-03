@@ -15,6 +15,8 @@
     content="Оригінальні вузли SMEG, виїзд майстра за 45 хв, офіційний акт виконаних робіт з гарантією до 1 року. вул. Вацлава Гавела, 16.">
   <meta property="og:type" content="website">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
 
@@ -66,6 +68,12 @@
       </div>
       <div class="topbar-info">
         <div class="topbar-item">
+          <a href="about.html">Про майстерню</a>
+        </div>
+        <div class="topbar-item">
+          <a href="contacts.html">Контакти</a>
+        </div>
+        <div class="topbar-item">
           <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
             <rect width="20" height="16" x="2" y="4" rx="2" />
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -80,28 +88,24 @@
   <header class="site-header">
     <div class="container header-wrapper">
       <a href="index.html" class="logo" aria-label="SMEG Service Київ Головна">
-        <div class="logo-symbol">#</div>
-        <div class="logo-text">
-          <span class="logo-title">SMEG SERVICE</span>
-          <span class="logo-subtitle">Майстерня побутової техніки</span>
-        </div>
+        <img src="img/logo.png" alt="SMEG" class="header-logo-img">
+        <span class="logo-service-badge">Service Kyiv</span>
       </a>
 
       <nav aria-label="Головна навігація">
         <ul class="nav-menu" id="site-nav-menu">
           <li><a href="index.html" class="nav-link active">Головна</a></li>
-          <li><a href="" class="nav-link">Послуги</a></li>
-          <li><a href="" class="nav-link">Ціни</a></li>
-          <li><a href="" class="nav-link">Про майстерню</a></li>
-          <li><a href="" class="nav-link">Контакти</a></li>
+          <li><a href="services.html" class="nav-link">Послуги</a></li>
+          <li><a href="prices.html" class="nav-link">Ціни</a></li>
+          <li><a href="about.html" class="nav-link">Про майстерню</a></li>
+          <li><a href="contacts.html" class="nav-link">Контакти</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
         <div class="header-phone-box">
-          <span class="header-phone-title">Консультація майстра</span>
+          <span class="header-phone-title">Консультація інженера</span>
           <a href="tel:+380683401208" class="header-phone-number" data-config-phone="0">
-            <span class="status-dot"></span>
             +38 (068) 340-12-08
           </a>
         </div>
@@ -120,77 +124,76 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
+    <!-- Hero Section: Editorial Italian Architecture -->
     <section class="hero">
       <div class="container hero-content">
-        <div class="hero-text">
+        <div class="hero-editorial">
+          <div class="hero-meta-strip">
+            <span class="hero-meta-atelier">ATELIER KYIV</span>
+            <span class="hero-meta-divider">—</span>
+            <span class="hero-meta-subtitle">Спеціалізований сервіс та реставрація техніки SMEG</span>
+          </div>
 
           <h1 class="hero-title">
-            Професійний ремонт техніки <span class="text-gradient">SMEG у Києві</span>
+            Преміальний ремонт техніки <span class="hero-brand-name">SMEG</span>
           </h1>
+
           <p class="hero-description">
-            Відновлення пральних машин, ретро-холодильників FAB, варильних панелей, духових шаф та кавомашин.
-            Оперативний
-            виїзд інженера по Києву за 45 хвилин або ремонт у сервісному центрі на вул. Вацлава Гавела, 16.
+            Професійне відновлення ретро-холодильників FAB, варильних поверхонь, кавомашин, духових шаф та посудомийних машин SMEG. Використовуємо лише оригінальні італійські запчастини. Пунктуальний виїзд інженера по Києву за 45 хвилин.
           </p>
 
-          <div class="hero-features">
-            <div class="hero-feat-item">
-              <div class="hero-feat-icon">
-                <svg class="svg-icon" style="width: 12px; height: 12px;" viewBox="0 0 24 24" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+          <div class="hero-spec-list">
+            <div class="hero-spec-item">
+              <span class="hero-spec-idx">01</span>
+              <div class="hero-spec-content">
+                <span class="hero-spec-title">Оригінальні вузли SMEG</span>
+                <span class="hero-spec-desc">Прямі поставки офіційних компонентів зі складу</span>
               </div>
-              <span>Оригінальні запчастини SMEG</span>
             </div>
-            <div class="hero-feat-item">
-              <div class="hero-feat-icon">
-                <svg class="svg-icon" style="width: 12px; height: 12px;" viewBox="0 0 24 24" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+            <div class="hero-spec-item">
+              <span class="hero-spec-idx">02</span>
+              <div class="hero-spec-content">
+                <span class="hero-spec-title">Офіційна гарантія до 12 місяців</span>
+                <span class="hero-spec-desc">Акт виконаних робіт з юридичною відповідальністю</span>
               </div>
-              <span>Офіційна гарантія до 12 місяців</span>
             </div>
-            <div class="hero-feat-item">
-              <div class="hero-feat-icon">
-                <svg class="svg-icon" style="width: 12px; height: 12px;" viewBox="0 0 24 24" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+            <div class="hero-spec-item">
+              <span class="hero-spec-idx">03</span>
+              <div class="hero-spec-content">
+                <span class="hero-spec-title">Безкоштовна діагностика</span>
+                <span class="hero-spec-desc">0 грн при проведенні відновлювальних робіт</span>
               </div>
-              <span>Безкоштовна діагностика при ремонті</span>
             </div>
-            <div class="hero-feat-item">
-              <div class="hero-feat-icon">
-                <svg class="svg-icon" style="width: 12px; height: 12px;" viewBox="0 0 24 24" aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+            <div class="hero-spec-item">
+              <span class="hero-spec-idx">04</span>
+              <div class="hero-spec-content">
+                <span class="hero-spec-title">Сертифіковані майстри 10+ років</span>
+                <span class="hero-spec-desc">Вузька спеціалізація на брендових платах та вузлах</span>
               </div>
-              <span>Сертифіковані майстри з досвідом 10+ років</span>
             </div>
           </div>
 
-          <div class="hero-buttons">
-            <button class="btn btn-primary btn-lg" data-open-modal>
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
-              </svg>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-open-modal>
               <span>Викликати майстра на дім</span>
             </button>
-            <a href="#calculator" class="btn btn-secondary btn-lg">
-              <span>Розрахувати вартість</span>
+            <a href="#calculator" class="hero-calc-btn">
+              <span>Розрахувати вартість ремонту</span>
+              <span class="hero-calc-arrow">→</span>
             </a>
           </div>
         </div>
 
-        <!-- Hero Lead Form -->
-        <div class="hero-card">
-          <div class="card-header">
-            <h2 class="card-title">Експрес-заявка на ремонт</h2>
-            <p class="card-subtitle">Черговий майстер зв'яжеться з вами за 5 хвилин</p>
+        <!-- Integrated Architectural Console (Solid, No Blur) -->
+        <div class="hero-console">
+          <div class="console-header">
+            <div class="console-kicker">ЕКСПРЕС-СЕРВІС • КИЇВ ТА ОБЛАСТЬ</div>
+            <h2 class="console-title">Заявка на виїзд інженера</h2>
+            <p class="console-subtitle">Черговий майстер зв'яжеться з вами протягом 5 хвилин</p>
           </div>
           <form class="ajax-repair-form">
             <input type="text" name="website_hp" style="display:none !important;" tabindex="-1" autocomplete="off">
-            <input type="hidden" name="source" value="Головна сторінка (Hero-форма)">
+            <input type="hidden" name="source" value="Головна сторінка (Hero-консоль)">
 
             <div class="form-group">
               <label class="form-label" for="hero-name">Ваше ім'я</label>
@@ -199,8 +202,7 @@
 
             <div class="form-group">
               <label class="form-label" for="hero-phone">Номер телефону</label>
-              <input type="tel" id="hero-phone" name="phone" class="form-control" placeholder="+38 (0__) ___-__-__"
-                required>
+              <input type="tel" id="hero-phone" name="phone" class="form-control" placeholder="+38 (0__) ___-__-__" required>
             </div>
 
             <div class="form-group">
@@ -218,10 +220,10 @@
             <div class="form-group">
               <label class="form-label" for="hero-desc">Опис проблеми (необов'язково)</label>
               <textarea id="hero-desc" name="message" class="form-control" rows="2"
-                placeholder="Наприклад: не нагріває воду або видає помилку E2"></textarea>
+                placeholder="Наприклад: не нагріває воду або код помилки E2"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <button type="submit" class="btn btn-console" style="width: 100%;">
               <span>Отримати консультацію майстра</span>
             </button>
 
@@ -233,58 +235,24 @@
       </div>
     </section>
 
-    <!-- Authority Proof Bar -->
-    <section class="proof-bar">
-      <div class="container proof-grid">
-        <div class="proof-item">
-          <div class="proof-icon">
-            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            </svg>
-          </div>
-          <div>
-            <div class="proof-stat">12+ років</div>
-            <div class="proof-label">Спеціалізації на техніці SMEG</div>
-          </div>
+    <!-- Authority Proof Strip: Editorial Typography Grid -->
+    <section class="proof-strip">
+      <div class="container proof-strip-grid">
+        <div class="proof-strip-col">
+          <div class="proof-strip-num">12<span class="proof-strip-plus">+</span> <span class="proof-strip-unit">років</span></div>
+          <div class="proof-strip-label">Вузької спеціалізації на техніці SMEG</div>
         </div>
-
-        <div class="proof-item">
-          <div class="proof-icon">
-            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-            </svg>
-          </div>
-          <div>
-            <div class="proof-stat">9 400+</div>
-            <div class="proof-label">Відновлених приладів у Києві</div>
-          </div>
+        <div class="proof-strip-col">
+          <div class="proof-strip-num">9 400<span class="proof-strip-plus">+</span></div>
+          <div class="proof-strip-label">Відновлених приладів у Києві та області</div>
         </div>
-
-        <div class="proof-item">
-          <div class="proof-icon">
-            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-            </svg>
-          </div>
-          <div>
-            <div class="proof-stat">100%</div>
-            <div class="proof-label">Оригінальні запчастини зі складу</div>
-          </div>
+        <div class="proof-strip-col">
+          <div class="proof-strip-num">100<span class="proof-strip-unit">%</span></div>
+          <div class="proof-strip-label">Оригінальні італійські компоненти</div>
         </div>
-
-        <div class="proof-item">
-          <div class="proof-icon">
-            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-          </div>
-          <div>
-            <div class="proof-stat">45 хв</div>
-            <div class="proof-label">Середній час прибуття майстра</div>
-          </div>
+        <div class="proof-strip-col">
+          <div class="proof-strip-num">45 <span class="proof-strip-unit">хв</span></div>
+          <div class="proof-strip-label">Середній час прибуття майстра на об'єкт</div>
         </div>
       </div>
     </section>
@@ -301,36 +269,23 @@
           <div class="service-card">
             <div>
               <div class="service-card-top">
-                <div class="service-icon-box">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="9" />
-                    <circle cx="12" cy="12" r="5" />
-                    <path d="M12 7v10" />
-                  </svg>
-                </div>
-                <span class="service-badge">Популярно</span>
+                <span class="service-ref">SMEG // 01</span>
+                <span class="service-badge">WASH & DRY</span>
               </div>
               <h3 class="service-title">Пральні та сушильні машини</h3>
-              <p class="service-desc">Усунення витоків, шуму підшипників, заміна ТЕНів, насосів, відновлення
-                мікроконтролерів.</p>
+              <p class="service-desc">Усунення витоків, шуму підшипників, заміна ТЕНів, насосів, компонентне відновлення блоків керування.</p>
               <ul class="service-issues">
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Не зливає або не набирає воду
+                  <span class="service-issue-bullet">—</span>
+                  <span>Не зливає або не набирає воду</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Сильна вібрація або шум при віджимі
+                  <span class="service-issue-bullet">—</span>
+                  <span>Сильна вібрація або шум при віджимі</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Блокування дверей або помилка дисплея
+                  <span class="service-issue-bullet">—</span>
+                  <span>Блокування люка або системна помилка</span>
                 </li>
               </ul>
             </div>
@@ -347,37 +302,23 @@
           <div class="service-card">
             <div>
               <div class="service-card-top">
-                <div class="service-icon-box">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <rect width="18" height="20" x="3" y="2" rx="2" />
-                    <path d="M3 10h18" />
-                    <path d="M10 6v2" />
-                    <path d="M10 14v4" />
-                  </svg>
-                </div>
-                <span class="service-badge">FAB & Вбудовані</span>
+                <span class="service-ref">SMEG // 02</span>
+                <span class="service-badge">FAB & ВБУДОВАНІ</span>
               </div>
               <h3 class="service-title">Холодильники та морозильники</h3>
-              <p class="service-desc">Заправка фреоном R600a, заміна інверторних компресорів, датчиків NTC, ремонт No
-                Frost.</p>
+              <p class="service-desc">Заправка фреоном R600a, заміна інверторних компресорів, сенсорів NTC, відновлення системи No Frost.</p>
               <ul class="service-issues">
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Не морозить або перемерзає в камері
+                  <span class="service-issue-bullet">—</span>
+                  <span>Не холодить або перемерзає в камері</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Компресор працює безперервно
+                  <span class="service-issue-bullet">—</span>
+                  <span>Компресор працює безперервно</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Витік холодоагенту / намерзання стінки
+                  <span class="service-issue-bullet">—</span>
+                  <span>Витік холодоагенту / намерзання стінки</span>
                 </li>
               </ul>
             </div>
@@ -394,36 +335,23 @@
           <div class="service-card">
             <div>
               <div class="service-card-top">
-                <div class="service-icon-box">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" />
-                    <line x1="3" x2="21" y1="9" y2="9" />
-                    <line x1="9" x2="9" y1="21" y2="9" />
-                  </svg>
-                </div>
-                <span class="service-badge">Вбудовані</span>
+                <span class="service-ref">SMEG // 03</span>
+                <span class="service-badge">ВБУДОВАНІ</span>
               </div>
               <h3 class="service-title">Посудомийні машини</h3>
-              <p class="service-desc">Чищення гідросистеми, заміна циркуляційних помп, нагрівачів проточного типу,
-                усунення помилок AquaStop.</p>
+              <p class="service-desc">Чищення гідросистеми, заміна циркуляційних помп, нагрівачів проточного типу, усунення помилок AquaStop.</p>
               <ul class="service-issues">
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Залишається брудний або мокрий посуд
+                  <span class="service-issue-bullet">—</span>
+                  <span>Залишається брудний або вологий посуд</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Спрацьовує захист від протікання AquaStop
+                  <span class="service-issue-bullet">—</span>
+                  <span>Спрацьовує захист від протікання AquaStop</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Не запускає програму / не зливає воду
+                  <span class="service-issue-bullet">—</span>
+                  <span>Не запускає цикл / не зливає воду</span>
                 </li>
               </ul>
             </div>
@@ -440,37 +368,23 @@
           <div class="service-card">
             <div>
               <div class="service-card-top">
-                <div class="service-icon-box">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <rect width="18" height="18" x="3" y="3" rx="2" />
-                    <circle cx="12" cy="12" r="4" />
-                    <line x1="3" x2="21" y1="7" y2="7" />
-                  </svg>
-                </div>
-                <span class="service-badge">Електричні</span>
+                <span class="service-ref">SMEG // 04</span>
+                <span class="service-badge">ЕЛЕКТРИЧНІ</span>
               </div>
               <h3 class="service-title">Духові шафи та кухонні плити</h3>
-              <p class="service-desc">Заміна верхніх/нижніх ТЕНів, конвекційних вентиляторів, петель дверей, термостатів
-                і
-                блоків таймера.</p>
+              <p class="service-desc">Заміна верхніх/нижніх ТЕНів, конвекційних турбін, петель дверей, термостатів і блоків таймера.</p>
               <ul class="service-issues">
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Не пропікає знизу або згори
+                  <span class="service-issue-bullet">—</span>
+                  <span>Не пропікає знизу або згори</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Не вмикається дисплей або підсвітка
+                  <span class="service-issue-bullet">—</span>
+                  <span>Не вмикається дисплей або таймер</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Дверцята закриваються нещільно
+                  <span class="service-issue-bullet">—</span>
+                  <span>Дверцята прилягають нещільно</span>
                 </li>
               </ul>
             </div>
@@ -487,37 +401,23 @@
           <div class="service-card">
             <div>
               <div class="service-card-top">
-                <div class="service-icon-box">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <rect width="20" height="14" x="2" y="5" rx="2" />
-                    <circle cx="7" cy="12" r="2.5" />
-                    <circle cx="17" cy="12" r="2.5" />
-                  </svg>
-                </div>
-                <span class="service-badge">Індукція</span>
+                <span class="service-ref">SMEG // 05</span>
+                <span class="service-badge">ІНДУКЦІЯ & СКЛО</span>
               </div>
               <h3 class="service-title">Варильні поверхні</h3>
-              <p class="service-desc">Ремонт імпульсних блоків живлення, сенсорних панелей управління, заміна
-                індукційних
-                котушок.</p>
+              <p class="service-desc">Ремонт імпульсних блоків живлення, сенсорних панелей управління, заміна індукційних контурів.</p>
               <ul class="service-issues">
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Блимають коди помилок (E / F)
+                  <span class="service-issue-bullet">—</span>
+                  <span>Блимають коди помилок (E / F)</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Не розпізнає посуд на конфорці
+                  <span class="service-issue-bullet">—</span>
+                  <span>Не розпізнає посуд на конфорці</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Вимкнулась під час приготування
+                  <span class="service-issue-bullet">—</span>
+                  <span>Вимкнулась під час приготування</span>
                 </li>
               </ul>
             </div>
@@ -534,39 +434,23 @@
           <div class="service-card">
             <div>
               <div class="service-card-top">
-                <div class="service-icon-box">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
-                    <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
-                    <line x1="6" x2="6" y1="2" y2="4" />
-                    <line x1="10" x2="10" y1="2" y2="4" />
-                    <line x1="14" x2="14" y1="2" y2="4" />
-                  </svg>
-                </div>
-                <span class="service-badge">SMEG 50's Style</span>
+                <span class="service-ref">SMEG // 06</span>
+                <span class="service-badge">50'S RETRO STYLE</span>
               </div>
               <h3 class="service-title">Кавомашини SMEG</h3>
-              <p class="service-desc">Комплексна декальцинація, перебирання заварного блоку, заміна ущільнювачів, помпи
-                та
-                клапанів тиску.</p>
+              <p class="service-desc">Комплексна декальцинація, перебирання заварного блоку, заміна ущільнювачів, помпи та клапанів тиску.</p>
               <ul class="service-issues">
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Кава не тече або капає повільно
+                  <span class="service-issue-bullet">—</span>
+                  <span>Кава не тече або капає повільно</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Шумить жорновий механізм або не меле
+                  <span class="service-issue-bullet">—</span>
+                  <span>Шумить жорновий вузол або не меле</span>
                 </li>
                 <li class="service-issue-item">
-                  <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  Підтікає вода під корпус
+                  <span class="service-issue-bullet">—</span>
+                  <span>Підтікає вода під основу приладу</span>
                 </li>
               </ul>
             </div>
@@ -589,7 +473,7 @@
     </section>
 
     <!-- Interactive Calculator Section -->
-    <section class="section" id="calculator" style="background: rgba(15, 21, 35, 0.4);">
+    <section class="section" id="calculator">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Калькулятор вартості ремонту</h2>
@@ -659,52 +543,31 @@
 
         <div class="why-grid">
           <div class="why-card">
-            <div class="why-icon-box">
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
-              </svg>
-            </div>
+            <span class="why-idx">01</span>
             <h3 class="why-title">Терміновий виїзд за 45 хв</h3>
-            <p class="why-desc">Майстерні авто у кожному районі Києва. Прибуваємо з повним набором інструментів та
-              запчастин.</p>
+            <p class="why-desc">Майстерні авто у кожному районі Києва. Прибуваємо з повним набором інструментів та оригінальних запчастин.</p>
           </div>
           <div class="why-card">
-            <div class="why-icon-box">
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-            </div>
-            <h3 class="why-title">Гарантія до 1 року</h3>
-            <p class="why-desc">Надаємо фірмовий акт виконаних робіт з печаткою майстерні. Будь-які гарантійні звернення
-              вирішуємо першочергово.</p>
+            <span class="why-idx">02</span>
+            <h3 class="why-title">Офіційна гарантія до 1 року</h3>
+            <p class="why-desc">Надаємо фірмовий акт виконаних робіт з печаткою майстерні. Будь-які гарантійні випадки вирішуємо в пріоритетному порядку.</p>
           </div>
           <div class="why-card">
-            <div class="why-icon-box">
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-              </svg>
-            </div>
-            <h3 class="why-title">Оригінальні деталі</h3>
-            <p class="why-desc">Прямі поставки оригінальних вузлів SMEG з Італії без сумнівних китайських реплік.</p>
+            <span class="why-idx">03</span>
+            <h3 class="why-title">Оригінальні вузли SMEG</h3>
+            <p class="why-desc">Прямі поставки аутентичних комплектуючих з Італії без сумнівних китайських копій та сурогатів.</p>
           </div>
           <div class="why-card">
-            <div class="why-icon-box">
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" x2="16.65" y1="21" y2="16.65" />
-              </svg>
-            </div>
+            <span class="why-idx">04</span>
             <h3 class="why-title">Точна діагностика</h3>
-            <p class="why-desc">Використовуємо спеціалізовані діагностичні сканери та осцилографи для точного виявлення
-              поломки.</p>
+            <p class="why-desc">Використовуємо спеціалізоване вимірювальне обладнання та сканери для виявлення прихованих дефектів.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- How We Work (Steps) -->
-    <section class="section" style="background: rgba(15, 21, 35, 0.3);">
+    <section class="section" style="background: #09090b; border-top: 1px solid rgba(255, 255, 255, 0.08); border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">4 кроки до бездоганної роботи техніки</h2>
@@ -713,57 +576,23 @@
         <div class="steps-grid">
           <div class="step-card">
             <span class="step-number">01</span>
-            <div class="step-icon-box">
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg>
-            </div>
             <h3 class="step-title">Заявка або дзвінок</h3>
-            <p class="step-desc">Ви залишаєте заявку або телефонуєте. Менеджер фіксує симптоми та погоджує зручний час
-              виїзду.</p>
+            <p class="step-desc">Ви залишаєте заявку або телефонуєте. Диспетчер фіксує симптоми та погоджує зручний для вас час візиту.</p>
           </div>
           <div class="step-card">
             <span class="step-number">02</span>
-            <div class="step-icon-box">
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="10" />
-                <path d="m4.93 4.93 4.24 4.24" />
-                <path d="m14.83 9.17 4.24-4.24" />
-                <path d="m14.83 14.83 4.24 4.24" />
-                <path d="m9.17 14.83-4.24 4.24" />
-              </svg>
-            </div>
-            <h3 class="step-title">Діагностика на місці</h3>
-            <p class="step-desc">Майстер проводить діагностику, знаходить точну причину несправності та озвучує
-              фіксовану
-              вартість.</p>
+            <h3 class="step-title">Діагностика на об'єкті</h3>
+            <p class="step-desc">Інженер проводить інструментальну перевірку, знаходить точну причину несправності та узгоджує фіксований кошторис.</p>
           </div>
           <div class="step-card">
             <span class="step-number">03</span>
-            <div class="step-icon-box">
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-              </svg>
-            </div>
             <h3 class="step-title">Професійний ремонт</h3>
-            <p class="step-desc">У 90% випадків ремонт виконується прямо вдома у клієнта протягом 1–2 годин з установкою
-              нових деталей.</p>
+            <p class="step-desc">У 90% випадків роботи виконуються безпосередньо вдома у клієнта протягом 1–2 годин із встановленням оригінальних деталей.</p>
           </div>
           <div class="step-card">
             <span class="step-number">04</span>
-            <div class="step-icon-box">
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                <polyline points="14 2 14 8 20 8" />
-                <line x1="16" x2="8" y1="13" y2="13" />
-                <line x1="16" x2="8" y1="17" y2="17" />
-                <polyline points="10 9 9 9 8 9" />
-              </svg>
-            </div>
-            <h3 class="step-title">Тест та гарантія</h3>
-            <p class="step-desc">Перевірка приладу у всіх режимах, демонстрація роботи та надання гарантійного акту.</p>
+            <h3 class="step-title">Тестування та гарантія</h3>
+            <p class="step-desc">Комплексна перевірка приладу у всіх штатних режимах, демонстрація роботи та видача гарантійного акту.</p>
           </div>
         </div>
       </div>
@@ -1011,6 +840,11 @@
 
         <div class="location-wrapper">
           <div class="location-info">
+            <div class="location-header-block">
+              <div class="location-kicker">КООРДИНАТИ ТА ПРИЙОМ ЗАЯВОК • КИЇВ</div>
+              <h3 class="location-hub-title">Майстерня та сервісний хаб</h3>
+            </div>
+
             <div class="location-item">
               <div class="location-icon-box">
                 <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -1021,6 +855,7 @@
               <div>
                 <div class="location-title">Адреса майстерні</div>
                 <div class="location-value" data-config-address-full>м. Київ, вул. Вацлава Гавела, 16, корп. 6</div>
+                <div class="location-subnote">Солом'янський район • Зручний під'їзд та гостьовий паркінг</div>
               </div>
             </div>
 
@@ -1032,11 +867,13 @@
                 </svg>
               </div>
               <div>
-                <div class="location-title">Телефони для консультацій</div>
-                <div class="location-value">
-                  <a href="tel:+380683401208" data-config-phone="0">+38 (068) 340-12-08</a><br>
+                <div class="location-title">Телефони для консультацій та виклику</div>
+                <div class="location-value location-phones">
+                  <a href="tel:+380683401208" data-config-phone="0">+38 (068) 340-12-08</a>
+                  <span class="location-phone-sep">/</span>
                   <a href="tel:+380756635093" data-config-phone="1">+38 (075) 663-50-93</a>
                 </div>
+                <div class="location-subnote">Прямий зв'язок із черговим сервісним інженером</div>
               </div>
             </div>
 
@@ -1051,8 +888,7 @@
                 <div class="location-title">Електронна пошта</div>
                 <div class="location-value">
                   <a href="mailto:office@smeg-service.kiev.ua"
-                    data-config-email-office>office@smeg-service.kiev.ua</a><br>
-                  <a href="mailto:info@smeg-service.kiev.ua" data-config-email-info>info@smeg-service.kiev.ua</a>
+                    data-config-email-office>office@smeg-service.kiev.ua</a>
                 </div>
               </div>
             </div>
@@ -1073,18 +909,30 @@
               </div>
             </div>
 
-            <div>
-              <button class="btn btn-primary" data-open-modal style="width: 100%;">
-                <span>Викликати майстра на адресу</span>
+            <div class="location-action-row">
+              <button class="btn btn-primary btn-lg" data-open-modal style="width: 100%;">
+                <span>ВИКЛИКАТИ МАЙСТРА НА АДРЕСУ</span>
               </button>
             </div>
           </div>
 
           <div class="map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.2291410143894!2d30.41369327685324!3d50.43685458896081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc098b1cb3c1%3A0x6b306a44c7bca5e3!2z0LHRg9C70YzQstCw0YAg0JLQsNGG0LvQsNCy0LAg0JPQsNCy0LXQu9CwLCAxNiwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1709400000000!5m2!1suk!2sua"
-              loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="SMEG Service Map">
+              src="https://maps.google.com/maps?q=%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%92%D0%B0%D1%86%D0%BB%D0%B0%D0%B2%D0%B0+%D0%93%D0%B0%D0%B2%D0%B5%D0%BB%D0%B0,+16,+%D0%9A%D0%B8%D1%97%D0%B2&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="SMEG Service Kyiv — бульвар Вацлава Гавела 16">
             </iframe>
+            <div class="map-minimal-strip">
+              <div class="map-minimal-row">
+                <span class="map-minimal-name">SMEG SERVICE ATELIER</span>
+                <span class="map-minimal-sep">—</span>
+                <span class="map-minimal-address">м. Київ, вул. Вацлава Гавела, 16</span>
+                <span class="map-minimal-sep">—</span>
+                <span class="map-minimal-hours">Пн–Сб 08:30–20:30, Нд 10:00–17:00</span>
+              </div>
+              <a href="https://maps.google.com/?q=50.43685,30.41369" target="_blank" rel="noopener" class="map-minimal-link">
+                <span>Google Maps ↗</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1092,94 +940,81 @@
 
   </main>
 
-  <!-- Footer -->
+  <!-- Architectural Atelier Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a href="index.html" class="logo">
-            <div class="logo-symbol">#</div>
-            <div class="logo-text">
-              <span class="logo-title">SMEG SERVICE</span>
-              <span class="logo-subtitle">Майстерня побутової техніки</span>
-            </div>
-          </a>
-          <p class="footer-about-text">
-            Спеціалізований сервіс та післягарантійний ремонт техніки бренду SMEG у Києві. Працюємо без вихідних з
-            оперативним виїздом майстра по всіх районах міста.
-          </p>
-          <div class="footer-socials">
-            <a href="https://t.me/smeg_service_kyiv" target="_blank" class="social-btn" data-config-tg
-              aria-label="Telegram">
-              <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <line x1="22" x2="11" y1="2" y2="13" />
-                <polygon points="22 2 15 22 11 13 2 9 22 2" />
-              </svg>
-            </a>
-          </div>
+      <!-- Top Brand Row with subtle hairlines -->
+      <div class="atelier-footer-top">
+        <div class="atelier-footer-logo-wrap">
+          <img src="img/logo.png" alt="SMEG" class="footer-logo-img">
+          <span class="atelier-footer-brand-tag">SERVICE ATELIER • KYIV</span>
         </div>
-
-        <div>
-          <h4 class="footer-col-title">Види техніки</h4>
-          <ul class="footer-links">
-            <li><a href="services.html#washing">Ремонт пральних машин</a></li>
-            <li><a href="services.html#fridge">Ремонт холодильників</a></li>
-            <li><a href="services.html#dishwasher">Ремонт посудомийок</a></li>
-            <li><a href="services.html#oven">Ремонт духових шаф</a></li>
-            <li><a href="services.html#hob">Ремонт варильних панелей</a></li>
-            <li><a href="services.html#coffee">Ремонт кавомашин</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Інформація</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">Про нашу майстерню</a></li>
-            <li><a href="prices.html">Прайс-лист та ціни</a></li>
-            <li><a href="prices.html#warranty">Умови гарантії</a></li>
-            <li><a href="contacts.html">Схема проїзду</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Контакти</h4>
-          <div class="footer-contact-item">
-            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
-            <span data-config-address-full>вул. Вацлава Гавела, 16, корп. 6</span>
-          </div>
-          <div class="footer-contact-item">
-            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg>
-            <a href="tel:+380683401208" data-config-phone="0">+38 (068) 340-12-08</a>
-          </div>
-          <div class="footer-contact-item">
-            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <rect width="20" height="16" x="2" y="4" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-            <a href="mailto:office@smeg-service.kiev.ua" data-config-email-office>office@smeg-service.kiev.ua</a>
-          </div>
-          <div class="footer-contact-item">
-            <svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-            <span>Пн–Сб: 08:30–20:30, Нд: 10:00–17:00</span>
-          </div>
+        <div class="atelier-footer-status">
+          <span>Прийом заявок: Пн–Сб 08:30–20:30, Нд 10:00–17:00</span>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <div>© 2026 SMEG Service Kyiv. Усі права захищено. Спеціалізований післягарантійний ремонт.</div>
-        <div>м. Київ, вул. Вацлава Гавела, 16, корп. 6</div>
+      <!-- Main 3-Column Architectural Grid -->
+      <div class="atelier-footer-grid">
+        <!-- Left: Brand & Copyright -->
+        <div class="atelier-footer-col atelier-footer-brand-col">
+          <h4 class="atelier-footer-kicker">МАЙСТЕРНЯ & СЕРВІС</h4>
+          <p class="atelier-footer-text">
+            Спеціалізоване післягарантійне відновлення, сертифіковані майстри та прямі поставки оригінальних італійських вузлів техніки SMEG.
+          </p>
+          <div class="atelier-footer-meta">
+            <span>© 2026 SMEG Service Kyiv.</span>
+            <span>Всі права захищено.</span>
+          </div>
+        </div>
+
+        <!-- Center: Minimalist Section Navigation -->
+        <div class="atelier-footer-col atelier-footer-nav-col">
+          <h4 class="atelier-footer-kicker">РОЗДІЛИ САЙТУ</h4>
+          <nav class="atelier-footer-nav-links" aria-label="Навігація сайту">
+            <a href="#services" class="atelier-f-link">Категорії техніки</a>
+            <a href="services.html" class="atelier-f-link">Види несправностей</a>
+            <a href="prices.html" class="atelier-f-link">Вартість ремонту</a>
+            <a href="#calculator" class="atelier-f-link">Калькулятор робіт</a>
+            <a href="about.html" class="atelier-f-link">Про майстерню</a>
+            <a href="contacts.html" class="atelier-f-link">Контакти та локація</a>
+          </nav>
+        </div>
+
+        <!-- Right: Contact info & Crisp Rectangular Button -->
+        <div class="atelier-footer-col atelier-footer-contact-col">
+          <h4 class="atelier-footer-kicker">ЧЕРГОВИЙ ІНЖЕНЕР</h4>
+          <div class="atelier-footer-phone-block">
+            <a href="tel:+380683401208" class="atelier-footer-phone" data-config-phone="0">+38 (068) 340-12-08</a>
+            <div class="atelier-footer-address-note" data-config-address-full>м. Київ, вул. Вацлава Гавела, 16, корп. 6</div>
+          </div>
+          <button class="btn btn-atelier-footer" data-open-modal>
+            <span>ВИКЛИКАТИ МАЙСТРА</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Hairline Meta Row -->
+      <div class="atelier-footer-bottom-strip">
+        <div class="atelier-footer-bottom-details">
+          <span>Спеціалізована майстерня SMEG • Солом'янський район, Київ</span>
+          <span class="atelier-footer-sep">—</span>
+          <span>Офіційний акт виконаних робіт • Гарантія до 12 міс.</span>
+        </div>
+        <div class="atelier-footer-legal-links">
+          <a href="#">Політика конфіденційності</a>
+          <a href="#">Регламент сервісу</a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <!-- Minimalist Atelier Scroll-To-Top (Vertical Hairline & Sand-Tone Text) -->
+  <button class="atelier-scroll-top" id="scroll-to-top-btn" aria-label="Повернутися на початок сторінки">
+    <span class="scroll-top-arrow">↑</span>
+    <span class="scroll-top-text">НАВЕРХ</span>
+    <span class="scroll-top-line"></span>
+  </button>
 
   <!-- Modal: Quick Order Popup -->
   <div class="modal-overlay" id="quick-order-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">

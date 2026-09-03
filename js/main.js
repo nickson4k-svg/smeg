@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Отримання конфігурації Telegram
       const cfg = window.SITE_CONFIG || (typeof SITE_CONFIG !== 'undefined' ? SITE_CONFIG : {});
       const botToken = (cfg.telegram && cfg.telegram.botToken) || "8903060860:AAFKSB4OSIJMmKnf8FlRlCOZUdu8_4xc_Cs";
-      const chatId = (cfg.telegram && cfg.telegram.chatId) || "-1004473436337";
+      const chatId = (cfg.telegram && cfg.telegram.chatId) || "-5342810428";
 
       // Блокування кнопки сабміту та індикація відправки
       const submitBtn = form.querySelector('button[type="submit"]');
@@ -312,10 +312,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const textInputs = document.querySelectorAll('input[type="text"]');
-  textInputs.forEach(input => {
-    input.addEventListener("input", () => {
-      input.style.borderColor = "";
+  /* ==========================================================================
+     6. Кнопка "Вгору" (Scroll to Top)
+     ========================================================================== */
+  const scrollToTopBtn = document.getElementById("scroll-to-top-btn");
+  if (scrollToTopBtn) {
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     });
-  });
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add("visible");
+      } else {
+        scrollToTopBtn.classList.remove("visible");
+      }
+    });
+  }
 });
+
