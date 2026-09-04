@@ -36,18 +36,21 @@
 }
 
 .page-title {
-  font-size: 2.8rem;
+  font-family: var(--font-display);
+  font-size: 2.7rem;
+  font-weight: 300;
   margin-bottom: 12px;
   color: #ffffff;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .page-subtitle {
-  font-size: 1.08rem;
+  font-size: 1.05rem;
   color: var(--text-secondary);
   max-width: 680px;
   margin: 0 auto;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
 /* ==========================================================================
@@ -72,15 +75,15 @@
 }
 
 .calc-step-title {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 400;
   margin-bottom: 14px;
   color: #ffffff;
   display: flex;
   align-items: center;
   gap: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
 }
 
 .calc-step-num {
@@ -93,8 +96,9 @@
   align-items: center;
   justify-content: center;
   font-size: 0.76rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fbf9f6;
+  font-family: var(--font-display);
 }
 
 .calc-grid-chips {
@@ -110,7 +114,7 @@
   border-radius: var(--radius-xs);
   color: var(--text-light-secondary);
   font-size: 0.86rem;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   cursor: pointer;
   transition: all var(--transition-fast);
@@ -131,7 +135,7 @@
   background: #f6f3ed;
   border-color: #f6f3ed;
   color: #0e0e10;
-  font-weight: 600;
+  font-weight: 500;
   box-shadow: none;
 }
 
@@ -153,19 +157,19 @@
 }
 
 .calc-summary-card .calc-price-label {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
 }
 
 .calc-price-display {
   font-family: var(--font-display);
   font-size: 2.8rem;
-  font-weight: 800;
+  font-weight: 300;
   color: #ffffff;
   margin: 10px 0 16px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .calc-price-display span {
@@ -218,11 +222,11 @@
   background: #141418;
   padding: 18px 24px;
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.88rem;
+  font-weight: 500;
+  font-size: 0.78rem;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.12em;
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -243,9 +247,10 @@
 
 .price-tag {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
   white-space: nowrap;
 }
 
@@ -263,17 +268,20 @@
 }
 
 .warranty-title {
-  font-family: var(--font-serif);
-  font-size: 1.6rem;
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 300;
   margin-bottom: 14px;
   color: #ffffff;
+  letter-spacing: -0.01em;
 }
 
 .warranty-desc {
   color: var(--text-secondary);
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: 24px;
   font-size: 0.94rem;
+  font-weight: 400;
 }
 
 /* ==========================================================================
@@ -325,7 +333,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
   border: 1px solid var(--border-medium);
   font-family: var(--font-display);
@@ -333,7 +341,7 @@
 }
 
 .review-name {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.94rem;
   color: #ffffff;
 }
@@ -411,10 +419,11 @@
   justify-content: space-between;
   cursor: pointer;
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 0.98rem;
   color: #ffffff;
   user-select: none;
+  letter-spacing: 0;
 }
 
 .faq-chevron {
@@ -438,7 +447,7 @@
   padding: 0 24px 22px;
   font-size: 0.92rem;
   color: var(--text-secondary);
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
 /* ==========================================================================
@@ -483,17 +492,18 @@
 }
 
 .location-title {
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   color: var(--text-dim);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.12em;
+  font-weight: 500;
   margin-bottom: 3px;
 }
 
 .location-value {
   font-size: 0.96rem;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .map-container {
@@ -522,25 +532,29 @@
 }
 
 .about-heading {
-  font-family: var(--font-serif);
-  font-size: 2.1rem;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 300;
   margin-bottom: 18px;
   color: #ffffff;
   line-height: 1.25;
+  letter-spacing: -0.01em;
 }
 
 .about-lead-text {
   color: var(--text-secondary);
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: 16px;
   font-size: 0.96rem;
+  font-weight: 400;
 }
 
 .about-sub-text {
   color: var(--text-secondary);
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: 28px;
   font-size: 0.94rem;
+  font-weight: 400;
 }
 
 .about-stats-grid {
@@ -560,17 +574,18 @@
 .about-stat-val {
   font-family: var(--font-display);
   font-size: 2.2rem;
-  font-weight: 800;
+  font-weight: 300;
   color: #ffffff;
   line-height: 1.1;
+  letter-spacing: -0.02em;
   margin-bottom: 6px;
 }
 
 .about-stat-lbl {
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 
 .about-standards-card {
@@ -581,10 +596,12 @@
 }
 
 .about-standards-title {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
   margin-bottom: 24px;
   color: #ffffff;
+  letter-spacing: -0.01em;
 }
 
 .about-standards-list {
@@ -603,11 +620,11 @@
 }
 
 .about-standard-num {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--color-sand-muted, #C6A87C);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   flex-shrink: 0;
   min-width: 28px;
   line-height: 1.4;
@@ -620,6 +637,7 @@
 .about-standard-name {
   color: #ffffff;
   font-size: 0.95rem;
+  font-weight: 500;
   display: block;
   margin-bottom: 4px;
 }
@@ -659,11 +677,13 @@
 }
 
 .service-detail-heading {
-  font-family: var(--font-serif);
-  font-size: 1.6rem;
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 300;
   color: #ffffff;
   margin: 0;
   line-height: 1.25;
+  letter-spacing: -0.01em;
 }
 
 .service-detail-cta-btn {
@@ -674,16 +694,18 @@
 .service-detail-text {
   color: var(--text-secondary);
   margin-bottom: 24px;
-  line-height: 1.65;
+  line-height: 1.6;
   font-size: 0.94rem;
+  font-weight: 400;
 }
 
 .service-subitems-title {
   margin-bottom: 16px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  font-weight: 400;
 }
 
 .service-subitems-grid {
@@ -719,7 +741,8 @@
 .service-subitem-price {
   margin-top: auto;
   color: #ffffff;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 400;
   font-size: 0.95rem;
 }
 
@@ -741,17 +764,20 @@
 }
 
 .contact-card-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 1.15rem;
+  font-weight: 400;
   color: #ffffff;
   margin-bottom: 8px;
+  letter-spacing: -0.01em;
 }
 
 .contact-card-desc {
   color: var(--text-secondary);
   font-size: 0.9rem;
-  line-height: 1.65;
+  line-height: 1.6;
   margin: 0;
+  font-weight: 400;
 }
 
 /* ==========================================================================
@@ -791,6 +817,8 @@
   .about-heading {
     font-size: 1.55rem !important;
     line-height: 1.25 !important;
+    font-weight: 300 !important;
+    letter-spacing: -0.01em !important;
   }
 
   .about-stats-grid {
@@ -831,6 +859,8 @@
   .service-detail-heading {
     font-size: 1.25rem !important;
     line-height: 1.25 !important;
+    font-weight: 300 !important;
+    letter-spacing: -0.01em !important;
   }
 
   .service-detail-cta-btn {
@@ -838,10 +868,10 @@
     justify-content: center !important;
     text-align: center !important;
     display: flex !important;
-    padding: 16px 20px !important;
-    font-size: 0.86rem !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.08em !important;
+    padding: 14px 20px !important;
+    font-size: 0.76rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.14em !important;
     text-transform: uppercase !important;
   }
 
@@ -929,8 +959,8 @@
   .pricing-table td:nth-child(1) {
     grid-area: title !important;
     font-family: var(--font-body) !important;
-    font-size: 1rem !important;
-    font-weight: 600 !important;
+    font-size: 0.98rem !important;
+    font-weight: 500 !important;
     color: #ffffff !important;
     line-height: 1.4 !important;
   }
@@ -970,9 +1000,9 @@
   }
 
   .pricing-table td:nth-child(3) .price-tag {
-    font-family: var(--font-body) !important;
+    font-family: var(--font-display) !important;
     font-size: 1.05rem !important;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
     color: #ffffff !important;
     letter-spacing: 0.02em !important;
     white-space: nowrap !important;
@@ -982,8 +1012,10 @@
     grid-template-columns: 1fr;
   }
   .page-title {
-    font-size: 1.9rem !important;
+    font-size: 1.85rem !important;
     line-height: 1.2 !important;
+    font-weight: 300 !important;
+    letter-spacing: 0 !important;
   }
   .page-hero {
     padding: 40px 0 24px !important;
@@ -1005,13 +1037,19 @@
   .warranty-title {
     font-size: 1.35rem !important;
     line-height: 1.25 !important;
+    font-weight: 300 !important;
+    letter-spacing: -0.01em !important;
   }
   .warranty-cta-btn {
     width: 100% !important;
     display: flex !important;
     justify-content: center !important;
     text-align: center !important;
-    padding: 15px 20px !important;
+    padding: 14px 20px !important;
+    font-size: 0.76rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
   }
 }
 
