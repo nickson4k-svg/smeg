@@ -403,25 +403,35 @@ svg {
 
 /* ==========================================================================
    Hero Section: Editorial Italian Architecture (Atelier Style)
-   Warm Stone Backdrop + Natural Texture + High Contrast Obsidian Form
+   Dark Obsidian Monochromatic Palette + Studio Backlight + High Contrast Form
    ========================================================================== */
 .hero {
   position: relative;
   padding: 85px 0 95px;
-  background: #ede7dc url('../img/hero.webp') right center / cover no-repeat;
-  border-bottom: 1px solid var(--border-hairline);
-  color: var(--text-dark-primary);
+  background: var(--color-obsidian) url('../img/hero.webp') right center / cover no-repeat;
+  border-bottom: none;
+  margin-bottom: 0;
+  color: var(--text-light-primary);
+  overflow: hidden;
 }
 
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg,
-      rgba(246, 243, 237, 0.98) 0%,
-      rgba(246, 243, 237, 0.92) 32%,
-      rgba(246, 243, 237, 0.38) 80%,
-      rgba(246, 243, 237, 0.15) 100%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(to top, rgba(14, 14, 16, 1) 0%, rgba(14, 14, 16, 0.8) 12%, rgba(14, 14, 16, 0) 28%),
+    linear-gradient(90deg,
+      rgba(14, 14, 16, 0.98) 0%,
+      rgba(14, 14, 16, 0.93) 38%,
+      rgba(14, 14, 16, 0.65) 75%,
+      rgba(14, 14, 16, 0.45) 100%);
   pointer-events: none;
   z-index: 1;
 }
@@ -452,23 +462,23 @@ svg {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: var(--text-dark-muted);
+  color: var(--text-light-muted);
 }
 
 .hero-meta-atelier {
-  color: var(--color-obsidian);
+  color: var(--color-sand-light);
   font-weight: 600;
   letter-spacing: 0.18em;
 }
 
 .hero-meta-divider {
-  color: var(--text-dark-muted);
+  color: var(--text-light-dim);
   font-weight: 400;
   opacity: 0.5;
 }
 
 .hero-meta-subtitle {
-  color: var(--text-dark-muted);
+  color: var(--text-light-muted);
 }
 
 .hero-title {
@@ -476,7 +486,7 @@ svg {
   font-size: clamp(2.3rem, 4.6vw, 4.1rem);
   line-height: 1.14;
   font-weight: 300;
-  color: var(--color-obsidian);
+  color: #ffffff;
   letter-spacing: 0;
   text-transform: uppercase;
   margin-bottom: 22px;
@@ -486,13 +496,13 @@ svg {
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0.02em;
-  color: var(--color-obsidian);
+  color: var(--color-sand-muted);
 }
 
 .hero-description {
   font-family: var(--font-body);
   font-size: 1.05rem;
-  color: var(--text-dark-body);
+  color: var(--text-light-secondary);
   line-height: 1.74;
   max-width: 590px;
   margin-bottom: 34px;
@@ -504,7 +514,7 @@ svg {
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 28px;
   margin-bottom: 38px;
-  border-top: 1px solid var(--border-hairline);
+  border-top: 1px solid var(--border-hairline-dark);
   padding-top: 24px;
 }
 
@@ -533,14 +543,14 @@ svg {
   font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 500;
-  color: var(--text-dark-primary);
+  color: var(--text-light-primary);
   line-height: 1.35;
   margin-bottom: 2px;
 }
 
 .hero-spec-desc {
   font-size: 0.78rem;
-  color: var(--text-dark-muted);
+  color: var(--text-light-muted);
   line-height: 1.4;
 }
 
@@ -552,6 +562,19 @@ svg {
   flex-wrap: wrap;
 }
 
+.hero-actions .btn-primary {
+  background: var(--color-sand);
+  color: var(--color-obsidian);
+  border-color: var(--color-sand);
+  font-weight: 600;
+}
+
+.hero-actions .btn-primary:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
 .hero-calc-btn {
   display: inline-flex;
   align-items: center;
@@ -561,15 +584,16 @@ svg {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--color-obsidian);
+  color: var(--text-light-secondary);
   padding: 10px 0;
-  border-bottom: 1px solid var(--color-obsidian);
-  transition: gap var(--transition-fast), color var(--transition-fast);
+  border-bottom: 1px solid var(--border-hairline-dark);
+  transition: gap var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
 }
 
 .hero-calc-btn:hover {
   gap: 14px;
-  color: #2b2b30;
+  color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .hero-calc-arrow {
@@ -708,10 +732,13 @@ textarea.form-control {
    Pure Typography, Huge Proportions, Hairline Dividers
    ========================================================================== */
 .proof-strip {
-  border-top: 1px solid var(--border-hairline-dark);
+  border-top: none;
   border-bottom: 1px solid var(--border-hairline-dark);
   background: #000000;
   padding: 44px 0;
+  margin-top: -1px;
+  position: relative;
+  z-index: 2;
 }
 
 .proof-strip-grid {
@@ -953,126 +980,7 @@ textarea.form-control {
   letter-spacing: 0.01em;
 }
 
-/* ==========================================================================
-   Interactive Calculator Section
-   ========================================================================== */
-.calc-wrapper {
-  background: var(--color-charcoal);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-xs);
-  padding: 44px;
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 48px;
-  align-items: start;
-}
 
-.calc-options {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-
-.calc-step-title {
-  font-size: 0.9rem;
-  font-weight: 400;
-  margin-bottom: 16px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.calc-step-num {
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: var(--color-sand-muted);
-}
-
-.calc-grid-chips {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  gap: 12px;
-}
-
-.calc-chip {
-  padding: 12px 14px;
-  background: #1d1d22;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius-xs);
-  color: var(--text-light-secondary);
-  font-size: 0.86rem;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  text-align: center;
-  user-select: none;
-}
-
-.calc-chip:hover {
-  background: #26262d;
-  border-color: rgba(255, 255, 255, 0.25);
-  color: #ffffff;
-}
-
-.calc-chip.selected {
-  background: var(--color-sand);
-  color: var(--color-obsidian);
-  border-color: var(--color-sand);
-  font-weight: 500;
-}
-
-.calc-summary-card {
-  background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-xs);
-  padding: 34px 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.calc-price-label {
-  font-size: 0.7rem;
-  color: var(--text-light-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-}
-
-.calc-price-display {
-  font-family: var(--font-display);
-  font-size: 2.2rem;
-  font-weight: 300;
-  color: #ffffff;
-  line-height: 1;
-  letter-spacing: -0.01em;
-}
-
-.calc-perks-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 0.84rem;
-  color: var(--text-light-secondary);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 16px 0;
-}
-
-.calc-perks-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.calc-perks-list svg {
-  width: 14px;
-  height: 14px;
-  color: var(--color-sand-muted);
-}
 
 /* ==========================================================================
    Pricing Overview Section (Minimalist Swiss Grid)
@@ -2086,10 +1994,6 @@ textarea.form-control {
     padding-left: 0;
   }
 
-  .calc-wrapper {
-    grid-template-columns: 1fr;
-    padding: 32px;
-  }
 
   .why-grid,
   .steps-grid {
@@ -2208,8 +2112,22 @@ textarea.form-control {
   }
 
   .hero {
+    position: relative;
     padding: 45px 0 50px;
     background-position: center;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    position: absolute;
+    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 14, 16, 0.94);
   }
 
   /* Advantages Block: Clean vertical list with thin hairline horizontal dividers */
@@ -2218,8 +2136,8 @@ textarea.form-control {
     flex-direction: column;
     gap: 0;
     margin-bottom: 26px;
-    border-top: 1px solid var(--border-hairline);
-    border-bottom: 1px solid var(--border-hairline);
+    border-top: 1px solid var(--border-hairline-dark);
+    border-bottom: 1px solid var(--border-hairline-dark);
     padding: 0;
   }
 
@@ -2227,7 +2145,7 @@ textarea.form-control {
     display: flex;
     flex-direction: column;
     padding: 13px 0;
-    border-bottom: 1px solid var(--border-hairline);
+    border-bottom: 1px solid var(--border-hairline-dark);
     gap: 2px;
   }
 
@@ -2248,18 +2166,18 @@ textarea.form-control {
     font-family: var(--font-body);
     font-size: 0.94rem;
     font-weight: 700;
-    color: var(--color-obsidian);
+    color: var(--text-light-primary);
     line-height: 1.35;
     margin-bottom: 2px;
   }
 
   .hero-spec-desc {
     font-size: 0.82rem;
-    color: var(--text-dark-muted);
+    color: var(--text-light-muted);
     line-height: 1.45;
   }
 
-  /* CTA: Single primary black rectangular button */
+  /* CTA: Single primary button */
   .hero-actions {
     display: flex;
     flex-direction: column;
@@ -2272,9 +2190,9 @@ textarea.form-control {
   .hero-actions .btn-primary {
     width: 100% !important;
     padding: 16px 20px;
-    background: #0e0e10;
-    color: #ffffff;
-    border: 1px solid #0e0e10;
+    background: var(--color-sand) !important;
+    color: var(--color-obsidian) !important;
+    border: 1px solid var(--color-sand) !important;
     border-radius: var(--radius-xs);
     font-size: 0.88rem;
     font-weight: 700;
@@ -2493,11 +2411,7 @@ textarea.form-control {
     letter-spacing: 0 !important;
   }
 
-  .calc-wrapper {
-    padding: 22px 16px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-  }
+
 }
 
 /* Universal Overflow Protection & Sticky Call Bar elimination */
