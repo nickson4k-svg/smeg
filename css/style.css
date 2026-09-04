@@ -1045,6 +1045,81 @@ textarea.form-control {
 }
 
 /* ==========================================================================
+   Pricing Overview Section (Minimalist Swiss Grid)
+   ========================================================================== */
+.pricing-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.pricing-overview-card {
+  background: var(--color-charcoal);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xs);
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: border-color var(--transition-normal), background var(--transition-normal);
+}
+
+.pricing-overview-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: #19191d;
+}
+
+.pricing-overview-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pricing-overview-name {
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.pricing-overview-note {
+  font-size: 0.78rem;
+  color: var(--text-light-muted);
+  line-height: 1.4;
+}
+
+.pricing-overview-price {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #ffffff;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .pricing-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .pricing-overview-card {
+    padding: 18px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .pricing-overview-price {
+    font-size: 1.05rem;
+    color: var(--color-sand-muted);
+  }
+}
+
+/* ==========================================================================
    Why Choose Us (Advantages)
    ========================================================================== */
 .why-grid {

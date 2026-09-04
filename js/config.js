@@ -41,7 +41,7 @@ const SITE_CONFIG = {
     warranty: {
         parts: "до 12 місяців",
         works: "до 12 місяців",
-        diagnosticsFree: "Безкоштовно при замовленні ремонту"
+        diagnosticsPrice: "від 900 грн"
     }
 };
 
